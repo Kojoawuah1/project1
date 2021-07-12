@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="C:\Users\user\Desktop\web architecture\signup.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="signup.css" rel="stylesheet"/>
+  <link href="{{url_for('static', filename='signup.css')}}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    
+    <form action="/signup" method="POST">
+      <input type="text" name="fname" placeholder="Firstname" /> <br>
+      <input type="text" name="lname" placeholder="LastName" /><br>
+      <input type="text" id="email" name="email" placeholder="E-mail" /><br>
+      <input type="password" id="password" name="password" placeholder="Password" /><br>
+      <input id="signmeup"  type="submit" name="signup_submit" value="Sign me up" />
+    </form>
+    
+    <div  id="button">
+      <a  href="/" type="button" style="color:white">Already a member? click to sign in</a>
+    </div>
+
+
+  </div>
+ 
+  </div>
+
+
+</body>
+</html>
